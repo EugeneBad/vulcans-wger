@@ -7,7 +7,6 @@ stage ('Running tests'){
                     sh '''
                     . venv/bin/activate
                     python3.6 ./manage.py test wger.core wger.manager --settings=wger.settings'''
-
                 }
             }
         },
@@ -18,7 +17,6 @@ stage ('Running tests'){
                     sh '''
                     . venv/bin/activate
                     python3.6 ./manage.py test wger.gym wger.utils wger.nutrition --settings=wger.settings'''
-
                 }
             }
         },
@@ -29,7 +27,6 @@ stage ('Running tests'){
                     sh '''
                     . venv/bin/activate
                     python3.6 ./manage.py test wger.weight wger.exercises --settings=wger.settings'''
-
                 }
             }
         },
@@ -40,7 +37,6 @@ stage ('Running tests'){
                     sh '''
                     . venv/bin/activate
                     python3.6 ./manage.py test wger.core wger.manager --settings=wger.settings'''
-
                 }
             }
         }
