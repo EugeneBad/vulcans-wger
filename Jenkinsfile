@@ -46,10 +46,11 @@ stage ('Running tests'){
         }
     )
 }
-    
+
 def venv(){
     stage ('Checkout'){
-        git branch: 'develop', url: 'https://github.com/EugeneBad/vulcans-wger.git'
+        //git branch: 'develop', url: 'https://github.com/EugeneBad/vulcans-wger.git'
+        checkout scm
     }
 
     stage("Install dependencies"){
