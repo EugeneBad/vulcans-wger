@@ -1,4 +1,4 @@
-stage ('Running tests'){
+stage ('Running Tests'){
     parallel (
         "Gym, Config, and Email" : {
             node() {
