@@ -5,7 +5,7 @@ node {
         git branch: 'develop', url: 'https://github.com/EugeneBad/vulcans-wger.git'
     }
     
-    stage('Install depenedencies'){
+    stage('Install Depenedencies'){
         sh '''
             python3 -m venv venv
             . venv/bin/activate
